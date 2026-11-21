@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "nullfaction",
+  "version": "${version}",
+  "name": "Null Faction",
+  "description": "The NULL faction from Unstable SMP: Totem of Null, command GUI, and the tiered Null army.",
+  "authors": [
+    "Null Faction"
+  ],
+  "license": "MIT",
+  "icon": "assets/nullfaction/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.nullfaction.NullMod"
+    ],
+    "client": [
+      "com.nullfaction.client.NullModClient"
+    ]
+  },
+  "mixins": [
+    "nullfaction.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.3",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
